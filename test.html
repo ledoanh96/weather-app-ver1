@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="test.css" />
+  </head>
+
+  <body>
+    <div class="dropdown-content">
+      <div id="search-border">
+        <input type="text" id="textfield" placeholder="Search for location or keyword" />
+      </div>
+      <div class="suggestions"></div>
+    </div>
+    <div class="main-border">
+      <div class="main">
+        <div class="city"><span></span></div>
+        <div class="icon"><span></span></div>
+        <div class="time"><span></span></div>
+        <div class="condition"><span></span></div>
+        <div class="temperature">
+          <span></span>
+          <div id="buttons">
+            <div class="button">
+              <input type="radio"id="celcius"name="degree"value="C"checked/>
+              <label for="celcius">C</label>
+            </div>
+            <div class="button">
+              <input type="radio" id="farenheit" name="degree" value="F" />
+              <label for="farenheit">F</label>
+            </div>
+          </div>
+        </div>
+        <div class="humidity"><span></span>%</div>
+      </div>
+    </div>
+    <script src="test.js"></script>
+  </body>
+</html>
