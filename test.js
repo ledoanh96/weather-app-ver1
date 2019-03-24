@@ -153,28 +153,3 @@ document.querySelector("body").addEventListener("click", event => {
   }
 });
 
-var bookList = [
-  "The Hound of the Baskervilles",
-  "On The Electrodynamics of Moving Bodies",
-  "Philosophiæ Naturalis Principia Mathematica",
-  "Disquisitiones Arithmeticae"
-];
-function add (bookArray,bookName) {
-  
-  return bookArray.concat(bookName);
-}
-function remove (bookArray,bookName) {
-  const result = bookArray.map((e)=> {
-      if(e!==bookName) {
-        return e;
-      }
-  });
-    return result;
-  }
-
-  var newBookList = add(bookList, 'A Brief History of Time');
-  var newerBookList = remove(bookList, 'On The Electrodynamics of Moving Bodies');
-  var newestBookList = remove(add(bookList, 'A Brief History of Time'), 'On The Electrodynamics of Moving Bodies');
-  console.log(bookList);
-  console.log(newBookList);
-  console.log(newerBookList)
