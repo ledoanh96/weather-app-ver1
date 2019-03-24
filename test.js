@@ -1,5 +1,5 @@
 const weatherKey = "3f396c019636440fbc663145182412";
-const weatherBaseURL = "http://api.apixu.com/v1/current.json?";
+const weatherBaseURL = "https://api.apixu.com/v1/current.json?";
 const defaultCheckedBox = "C";
 const ggkey = "AIzaSyCXjMCgV4xSa1GV_qZijGu7ZJHbdNLKEBU";
 const proxyURL = "https://cors-anywhere.herokuapp.com/";
@@ -9,7 +9,7 @@ const autocompleteBaseURL =
 const placeDetailBaseURL =
   "https://maps.googleapis.com/maps/api/place/details/json?";
 const defaultDisplayURL =
-  "http://api.apixu.com/v1/current.json?key=3f396c019636440fbc663145182412&q=39.2903848,-76.6121893";
+  "https://api.apixu.com/v1/current.json?key=3f396c019636440fbc663145182412&q=39.2903848,-76.6121893";
 let currentSuggestion = -1;
 let fetched = false;
 const display = (json, state) => {
